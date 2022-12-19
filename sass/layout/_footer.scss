@@ -1,0 +1,42 @@
+.footer {
+    background: var(--secondary-background-color);
+    padding: 60px 0;
+}
+
+.container-position {
+    display: flex;
+    align-items: baseline;
+}
+.position {
+    justify-content: center;
+    align-items: center;
+    min-width: 231px;
+    margin-right: 70px;
+}
+.address {
+    font-style: normal;
+}
+
+.address__list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.address__location {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+
+.footer-contact {
+    color: var(--info-color);
+
+    text-decoration: none;
+
+    transition: color var(--cubic-bezier);
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
+}
+
