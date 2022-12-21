@@ -1,0 +1,22 @@
+.footer-box {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: inline-block;
+  }
+}
+
+.slogan {
+  margin-bottom: 20px;
+
+  @include font();
+  text-transform: uppercase;
+
+  color: $primary-white-color;
+}

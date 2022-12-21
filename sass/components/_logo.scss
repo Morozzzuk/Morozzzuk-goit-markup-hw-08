@@ -1,21 +1,21 @@
 .logo {
-    font-family: 'Raleway', sans-serif;
-    @include font(null, $fs: 24px, $lh: 1.17);
+  font-family: 'Raleway', sans-serif;
+  @include font(null, $fs: 24px, $lh: 1.17);
 
-    color: var(--primary-text-color);
+  color: $black-color;
 
-    @media screen and (min-width: $desktop) {
-        @include font(null, $fs: 26px, $lh: 1.19);
-    }
+  @media screen and (min-width: $desktop) {
+    @include font(null, $fs: 26px, $lh: 1.19);
+  }
 }
 
 .accent {
-    color: var(--accent-color);
+  color: $accent-color;
 }
 
 .footer__logo {
-    margin-bottom: 20px;
-    display: inline-block;
+  margin-bottom: 20px;
+  display: inline-block;
 
-    color: var(--secondary-text-color);
+  color: $primary-white-color;
 }

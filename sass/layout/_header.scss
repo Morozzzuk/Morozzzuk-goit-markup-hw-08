@@ -1,45 +1,11 @@
 .header {
-    border-bottom: 1px solid #ececec;
-    & .container {
-        display: flex;
-        align-items: center;
-    }
+  margin-left: auto;
+  margin-right: auto;
+
+  // width: 1600px;
+  border-bottom: 1px solid #ececec;
+
+  &__container {
+    // @include centeredFlex();
+  }
 }
-.header-contact {
-margin-left: auto;
-}
-.contact {
-&__list {
-        display: flex;
-
-        gap: 50px;
-    }
-&__link {
-    color: var(--text-color);
-    text-decoration: none;
-
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    display: flex;
-    padding: 32px 0;
-    align-items: center;
-
-    transition: color var(--cubic-bezier);
-
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
-}
-&__icons {
-    fill: currentColor;
-    margin-right: 10px;
-}
-}
-
-
-
-
-
-

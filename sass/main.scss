@@ -1,14 +1,28 @@
-// utils
-@import './utils/module';
+@import './utils/variables';
+@import './utils/breakpoints';
+@import './utils/mixins';
 
-// base
-@import './base/module';
+@import './base/reset';
+@import './base/common';
+@import './base/hidden';
 
-// components
-@import './components/module';
+@import './components/container';
+@import './components/title';
+@import './components/logo';
+@import './components/btn';
+@import './components/social';
 
-// layout
-@import './layout/module';
-
-// pages
-@import './pages/module';
+@import './layout/header';
+@import './layout/navigation';
+@import './layout/headcontact';
+@import './layout/hero';
+@import './layout/feature';
+@import './layout/work';
+@import './layout/team';
+@import './layout/client';
+@import './layout/footer';
+@import './layout/address';
+@import './layout/slogan';
+@import './layout/subscribe';
+@import './layout/project';
+@import './layout/modal';
