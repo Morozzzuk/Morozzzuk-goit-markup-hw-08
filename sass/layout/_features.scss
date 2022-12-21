@@ -75,7 +75,7 @@
     &__text {
         @include font(null, $lh: 1.71);
 
-        color: --text-color;
+        color: var(--text-color);
     }
 
     &__item {

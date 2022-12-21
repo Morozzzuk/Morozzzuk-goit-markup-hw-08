@@ -1,38 +1,79 @@
-.picture {
-    background-color: #f5f4fa;
-}
-.card-list {
-    display: flex;
+// .picture {
+//     background-color: #f5f4fa;
+// }
+// .card-list {
+//     display: flex;
 
-    &>li:not(:last-child) {
-            margin-right: 30px;
+//     &>li:not(:last-child) {
+//             margin-right: 30px;
+//         }
+// }
+//  .card-list__item {
+//      background-color: var(--main-background-color);
+//      flex-basis: calc((100% - 60px) / 3);
+//      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//          0px 2px 1px rgba(0, 0, 0, 0.2);
+//      border-radius: 0px 0px 4px 4px;
+//  }
+
+//  .card-list__name {
+//      font-weight: 500;
+//      font-size: 16px;
+//      line-height: 1.19;
+//      text-align: center;
+//      margin-bottom: 10px;
+//  }
+
+//  .card-list__position {
+//      color: var(--text-color);
+//      font-size: 16px;
+//      line-height: 1.19;
+//      text-align: center;
+//      margin-bottom: 16px;
+//  }
+
+// .user {
+//     padding-top: 30px;
+//     padding-bottom: 16px;
+// }
+
+.cards{
+    // margin-left: auto;
+    // margin-right: auto;
+    // max-width: 1600px;
+    background: #f5f4fa;
+}
+
+.card {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+    &__info {
+        padding-top: 30px;
+        padding-bottom: 24px;
+
+        @media screen and (min-width: $desktop) {
+            padding-bottom: 30px;
         }
-}
- .card-list__item {
-     background-color: var(--main-background-color);
-     flex-basis: calc((100% - 60px) / 3);
-     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-         0px 2px 1px rgba(0, 0, 0, 0.2);
-     border-radius: 0px 0px 4px 4px;
- }
+    }
 
- .card-list__name {
-     font-weight: 500;
-     font-size: 16px;
-     line-height: 1.19;
-     text-align: center;
-     margin-bottom: 10px;
- }
+    &__subtitle {
+        margin-bottom: 10px;
 
- .card-list__position {
-     color: var(--text-color);
-     font-size: 16px;
-     line-height: 1.19;
-     text-align: center;
-     margin-bottom: 16px;
- }
+        @include font($fw: 500, $fs: 16px, $lh: 1.19);
+        text-align: center;
 
-.user {
-    padding-top: 30px;
-    padding-bottom: 16px;
+        color: var(--primary-text-color);
+    }
+
+    &__text {
+        margin-bottom: 16px;
+        @include font($fw: null, $fs: 16px, $lh: 1.19);
+        text-align: center;
+
+        color: var(--text-color);
+    }
 }

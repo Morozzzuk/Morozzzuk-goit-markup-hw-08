@@ -706,7 +706,7 @@ button {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: --text-color;
+  color: var(--text-color);
 }
 @media screen and (min-width: 768px) {
   .feature__item {
@@ -754,7 +754,7 @@ button {
   letter-spacing: 0.03em;
   text-align: center;
   text-transform: uppercase;
-  color: var(secondary-text-color);
+  color: var(--secondary-text-color);
 }
 
 .work__card {
@@ -765,43 +765,42 @@ button {
   margin-right: 30px;
 }
 
-.picture {
-  background-color: #f5f4fa;
+.cards {
+  background: #f5f4fa;
 }
 
-.card-list {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
-.card-list > li:not(:last-child) {
-  margin-right: 30px;
+.card__info {
+  padding-top: 30px;
+  padding-bottom: 24px;
 }
-
-.card-list__item {
-  background-color: var(--main-background-color);
-  flex-basis: calc((100% - 60px) / 3);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
+@media screen and (min-width: 1200px) {
+  .card__info {
+    padding-bottom: 30px;
+  }
 }
-
-.card-list__name {
+.card__subtitle {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 10px;
+  color: var(--primary-text-color);
 }
-
-.card-list__position {
-  color: var(--text-color);
+.card__text {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 16px;
-}
-
-.user {
-  padding-top: 30px;
-  padding-bottom: 16px;
+  color: var(--text-color);
 }
 
 .logotype-list {
