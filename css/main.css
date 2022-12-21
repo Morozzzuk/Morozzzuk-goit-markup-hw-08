@@ -887,4 +887,30 @@ button {
 }
 .footer-contact:hover, .footer-contact:focus {
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .footer-box {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer-box {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    display: inline-block;
+  }
+}
+
+.join {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-text-color);
 }/*# sourceMappingURL=main.css.map */
