@@ -208,17 +208,6 @@
   &:focus {
     color: $focus-btn-color;
   }
-
-  &::after {
-    position: absolute;
-    content: '';
-    left: 0;
-    bottom: 5px;
-    width: 100%;
-    border-bottom: 1px solid $accent-color;
-
-    color: $accent-color;
-  }
 }
 
 .form__btn {
