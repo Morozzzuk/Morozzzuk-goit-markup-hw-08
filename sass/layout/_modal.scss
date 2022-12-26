@@ -254,20 +254,10 @@
     color: $focus-btn-color;
   }
 
-  &::after {
-    position: absolute;
-    content: '';
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    border-bottom: 1px solid $accent-color;
-
-    color: $accent-color;
-
     @media screen and (min-width: $desktop) {
       bottom: 5px;
     }
-  }
+  
 
   @media screen and (min-width: $mobile) {
     @include font(null, $fs: 12px, $lh: 1.17);

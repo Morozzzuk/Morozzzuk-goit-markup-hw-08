@@ -1428,17 +1428,8 @@ img {
 .form__check-link:hover, .form__check-link:focus {
   color: #188ce8;
 }
-.form__check-link::after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  border-bottom: 1px solid #2196f3;
-  color: #2196f3;
-}
 @media screen and (min-width: 1200px) {
-  .form__check-link::after {
+  .form__check-link {
     bottom: 5px;
   }
 }
