@@ -332,6 +332,14 @@ img {
   letter-spacing: 0.02em;
   color: #2196f3;
 }
+@media screen and (min-width: 320px) {
+  .mobile-contact__link-tel {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+  }
+}
 
 .mobile-contact__link {
   font-weight: 500;
@@ -367,6 +375,14 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+@media screen and (min-width: 320px) {
+  .mobile-soc__link {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -576,7 +592,7 @@ img {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/bg_image_2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_tablet_2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1253,7 +1269,6 @@ img {
   .modal {
     max-width: 450px;
     width: 100%;
-    height: 609px;
   }
 }
 @media screen and (min-width: 480px) {

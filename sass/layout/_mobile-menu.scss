@@ -49,12 +49,6 @@
   }
 }
 
-.mobile-nav {
-}
-
-.mobile-nav__list {
-}
-
 .mobile-nav__item {
   &:not(:last-child) {
     margin-bottom: 32px;
@@ -93,6 +87,9 @@
 .mobile-contact__link-tel {
   @include font($fw: 500, $fs: 34px, $lh: 1.18, $ls: 0.02em);
   color: $accent-color;
+  @media screen and (min-width: 320px){
+  @include font($fw: 500, $fs: 26px, $lh: 1.18, $ls: 0.02em);
+  }
 }
 
 .mobile-contact__link {
@@ -126,4 +123,8 @@
 .mobile-soc__link {
   @include font($fw: 500, $fs: 18px, $lh: 1.22, $ls: 0.02em);
   color: $accent-color;
+
+  @media screen and (min-width: 320px) {
+  @include font($fw: 500, $fs: 11px, $lh: 1.22, $ls: 0.02em);
+    }
 }
