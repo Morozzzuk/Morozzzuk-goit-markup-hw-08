@@ -374,7 +374,16 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/mihail.jpg" alt="Михайло Єрмаков" />
+
+              <picture>
+                <source srcset="./images/mihail-pc.jpg 1x, ./images/mihail-pc@2x.jpg 2x" media="(min-width: 1200px)" />
+              
+                <source srcset="./images/mihail-tab.jpg 1x, ./images/mihail-tab@2x.jpg 2x" media="(min-width: 768px)" />
+              
+                <source srcset="./images/mihail-mob.jpg 1x, ./images/mihail-mob@2x.jpg 2x" media="(max-width: 767px)" />
+              
+                <img src="./images/mihail-pc.jpg" alt="Михайло Єрмаков" />
+              </picture>
               <div class="team__info">
                 <h3 class="team__subtitle">Михайло Єрмаков</h3>
                 <p lang="en" class="team__text">UI Designer</p>
