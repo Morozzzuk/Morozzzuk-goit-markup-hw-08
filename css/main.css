@@ -734,6 +734,9 @@ img {
 }
 
 .section__team {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
   background: #f5f4fa;
 }
 
