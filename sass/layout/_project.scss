@@ -46,7 +46,7 @@
   background-color: $light-background-color;
   border: transparent;
   border-radius: 4px;
-  cursor: pointer;
+  // cursor: pointer;
 
   transition: color $duration $timing-function, background-color $duration $timing-function,
     box-shadow $duration $timing-function;
