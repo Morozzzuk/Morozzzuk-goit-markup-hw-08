@@ -262,6 +262,7 @@ html ::-webkit-scrollbar-thumb {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  border-bottom: 1px;
   background-color: rgba(248, 210, 78, 0.5);
   text-align: center;
   padding: 5px;
